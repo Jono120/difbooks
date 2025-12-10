@@ -6,8 +6,8 @@
 # - Run the cells in order. Reports will be saved next to your input files as `id_matches.csv`, `id_only_in_file1.csv`, `id_only_in_file2.csv`, and `id_diff_summary.csv`.
 
 # Configuration: set your file paths and ID column
-file1_path = r'd:\Scripts\file1.csv'  # e.g., 'd:\Scripts\listA.csv'
-file2_path = r'd:\Scripts\file2.csv'  # e.g., 'd:\Scripts\listB.txt'
+file1_path = r'.\file1.csv'  # e.g., 'd:\Scripts\listA.csv'
+file2_path = r'.\file2.csv'  # e.g., 'd:\Scripts\listB.txt'
 
 # If your files have a header row with the ID column name, set id_column
 id_column = 'ID'  # e.g., 'id', 'accountNumber'
@@ -19,6 +19,7 @@ id_index = 0  # only used when use_header=False
 # Optional: delimiter hints; set to None for auto-detection
 delimiter1 = None
 delimiter2 = None
+
 
 # Import libraries
 import os
@@ -143,10 +144,10 @@ styled_all
 
 # Save reports next to input files
 base_dir = os.path.dirname(file1_path) or os.getcwd()
-out_matches = os.path.join(base_dir, 'id_matches.csv')
-out_only_in_1 = os.path.join(base_dir, 'id_only_in_file1.csv')
-out_only_in_2 = os.path.join(base_dir, 'id_only_in_file2.csv')
-out_summary = os.path.join(base_dir, 'id_diff_summary.csv')
+out_matches = os.path.join(base_dir, './Outputs/id_matches.csv')
+out_only_in_1 = os.path.join(base_dir, './Outputs/id_only_in_file1.csv')
+out_only_in_2 = os.path.join(base_dir, './Outputs/id_only_in_file2.csv')
+out_summary = os.path.join(base_dir, './Outputs/id_diff_summary.csv')
 
 df_matches.to_csv(out_matches, index=False)
 df_only_in_1.to_csv(out_only_in_1, index=False)
