@@ -64,4 +64,4 @@ Perfect for data reconciliation tasks like:
 
 > :arrow_right: Some components were aided based on help from GitHub Copilot and a secondary dev :arrow_left:
 
-:new_zealand: :test_tube: :arrow_up_small:
+:new_zealand: :test_tube: :arrow_up_small: :notebook: the emoji use is mine, just adding some fun to just black&white pages
